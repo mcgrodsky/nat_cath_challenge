@@ -49,26 +49,38 @@ body{
   margin:0;
   float:left;
   background: url('img-one.jpeg');
+  background-size: 100% 100%; /*display entire img inside div */
+
 }
 .event-description-one{
   width:50%;
-  height: 50%;
+  height: 50%; /*takes up 41% on #subcontainer*/
   float:right;
   margin:0;
+  border:1px solid red;
+  /*using padding to control position of text block. calculated relative to this div's width/height */
+  padding: 4.3% 0 0 3.5%;
+
 }
 
+/*essentially the same as .event-img-one. would normally make mixin*/
 
 .event-img-two{
-  width:50%; /*takes up 50% of #sub-container width */
-  height: 50.1%; /*takes up 53.1% of #sub-container height */
+  width:50%;
+  height: 50%;
   margin:0;
   float:right;
   background: url('img-two.jpeg');
-
+  background-size: 100% 100%;
 }
+
 .event-description-two{
   width:50%;
   height: 50%;
   float:left;
   margin:0;
+  text-align: right;
+  border:1px solid red;
+  /*using padding to control position of text block. calculated relative to this div's width/height */
+  padding: 4.3% 3.5% 0 0;
 }
