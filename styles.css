@@ -5,7 +5,6 @@
    box-sizing: border-box;
    margin: 0;
  }
-
  /*standard clearfix to handle floats*/
  .clearfix:after {
    visibility:hidden;
@@ -16,12 +15,10 @@
    height:0;
  }
 
-
 body{
   background:gray;
   height:800px; /*needs height to position #sub-container vertically*/
   max-width: 100vw;
-
 }
 
 #main-container{
@@ -35,13 +32,11 @@ body{
   height:618.4px; /* 77% of main-container */
   width:82%;
   margin:0 auto;
-  border:1px solid black;
   top:-5%;
   left:0;
   right:0;
   position:absolute;
 }
-
 
 .event-img-one{
   width:50%; /*takes up 50% of #sub-container width */
@@ -57,11 +52,33 @@ body{
   height: 50%; /*takes up 41% on #subcontainer*/
   float:right;
   margin:0;
-  border:1px solid red;
-  /*using padding to control position of text block. calculated relative to this div's width/height */
-  padding: 4.3% 0 0 3.5%;
-
 }
+/*using padding to control position of text block. calculated relative to this div's width/height */
+
+  .event-description-one h4{
+    padding: 9.3% 11% 0 15.5%;
+
+  }
+  .event-description-one h3{
+    padding: 0 11% 0 15.5%;
+  }
+  .event-description-one h2{
+    padding: 0 11% 0 15.5%;
+  }
+  .event-description-one h5{
+    padding: 0 11% 0 15.5%;
+  }
+  .event-description-one p{
+    padding: 0 11% 0 15.5%;
+  }
+
+/*content inside .event-description-one*/
+  .hrz-line{
+    width:12.5%;
+    border-top:1px solid red;
+    padding-left:-25px;;
+    position:absolute;
+  }
 
 /*essentially the same as .event-img-one. would normally make mixin*/
 
@@ -80,7 +97,6 @@ body{
   float:left;
   margin:0;
   text-align: right;
-  border:1px solid red;
   /*using padding to control position of text block. calculated relative to this div's width/height */
   padding: 4.3% 3.5% 0 0;
 }
