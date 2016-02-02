@@ -40,24 +40,24 @@ body{
 
 .event-img-one{
   width:50%; /*takes up 50% of #sub-container width */
-  height: 50%; /*takes up 53.1% of #sub-container height */
+  height: 55%; /*takes up 53.1% of #sub-container height */
   margin:0;
   float:left;
   background: url('img-one.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
+  -webkit-filter: hue-rotate(-120deg);
 
 }
 .event-description-one{
   width:50%;
-  height: 50%; /*takes up 41% on #subcontainer*/
+  height: 45%; /*takes up 41% on #subcontainer*/
   float:right;
   margin:0;
 }
-/*using padding to control position of text block. calculated relative to this div's width/height */
+/*using padding to control position of text inside. calculated relative to this div's width/height. Really don't like this..not very DRY. But couldn't figure out how to position the horizontal line without separating text fields.. */
 
   .event-description-one h4{
     padding: 9.3% 11% 0 15.5%;
-
   }
   .event-description-one h3{
     padding: 0 11% 0 15.5%;
@@ -84,19 +84,35 @@ body{
 
 .event-img-two{
   width:50%;
-  height: 50%;
+  height:55%;
   margin:0;
   float:right;
   background: url('img-two.jpeg');
   background-size: 100% 100%;
+  -webkit-filter: hue-rotate(-120deg);
+
 }
 
 .event-description-two{
   width:50%;
-  height: 50%;
+  height:45%;
   float:left;
   margin:0;
   text-align: right;
-  /*using padding to control position of text block. calculated relative to this div's width/height */
-  padding: 4.3% 3.5% 0 0;
+
+}
+
+
+
+.featured-events{
+  background:url('img-three.jpeg');
+  background-size: 100% 100%; /*display entire img inside div */
+  width:28.4%;
+  height:21.2%;
+  position:absolute;
+  visibility: visible;
+  top:40%;
+  left:36%;
+  right:0;
+  z-index: 200;
 }
