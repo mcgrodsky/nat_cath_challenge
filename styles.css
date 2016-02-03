@@ -41,7 +41,7 @@ body{
 .featured-events{
   text-align: center;
   color:white;
-  background:url('images/img-three.jpeg');
+  background:url('images/img-four.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
   width:31.4%;
   height:23.2%;
@@ -101,7 +101,7 @@ body{
 .event-img-description {
     padding-left:18%;
     text-transform: uppercase;
-    font-size: 140%;
+    font-size: 180%;
     font-weight: lighter;
 }
 .event-description-one{
@@ -214,12 +214,18 @@ body{
 
 /*media queries - below 800px*/
 @media (max-width: 800px) {
+  #main-container{
+    height: 140%;
+    margin-top: 50%;
+
+  }
   .featured-events{
     position: relative;
     width:60%;
     top:0;
     left:0;
     margin:0 auto;
+    margin-top:2em;
   }
   .event-description h4, h2, h3, h5, p {
     padding:0;
