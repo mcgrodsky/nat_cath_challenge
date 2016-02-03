@@ -9,6 +9,6 @@
 
 <h2> Outstanding Issues </h2>
 <ol>
-<li> Had to use a hacky way to calculate sizes - used my on-screen ruled to calculate the size of my #main-container and #sub-container and they every other size/padding/dimension was based off of that. Not ideal.</li>
+<li> Had to use a hacky way to calculate sizes - used my on-screen ruler to calculate the size of my #main-container and #sub-container and they every other size/padding/dimension was based off of that. Not ideal.</li>
 <li> The horizontal lines are just empty divs with a border. Don't really like this as it seems like wasted HTML</li>
 </ol>
