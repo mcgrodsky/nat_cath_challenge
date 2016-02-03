@@ -21,13 +21,11 @@ body{
   max-width: 100vw;
 }
 
-h2, h5{
-  color:orange;
-  font-family: serif;
-}
+
+
 #main-container{
   background:white;
-  height:69.9%; /* calculated with targetpx / containerpx=result % */
+  height:70.9%; /* calculated with targetpx / containerpx=result % */
   position:relative;
   top:50%;
   transform:translateY(-50%);}
@@ -46,7 +44,7 @@ h2, h5{
   color:white;
   background:url('images/img-three.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
-  width:29.4%;
+  width:31.4%;
   height:23.2%;
   position:absolute;
   top:38.5%;
@@ -63,14 +61,33 @@ h2, h5{
   -webkit-filter: hue-rotate(-120deg); /* make purple */
 }
 
-  .event-img-text{
+.event-img-text{
     padding:8% 10% 0;
+    color:white;
+}
+
+.event-img-text .month{
+  font-size:100%;
+  width:8%;
+  border-bottom:1px solid white;
+  text-transform: uppercase;
+  padding-bottom:2px;
   }
-  .month{
-    text-decoration: underline;
+
+.event-img-text .day{
+  font-size: 200%;
+}
+
+.event-img-text-two{
+    padding-top: 35%;
   }
+
+
   .day{
     float:left;
+  }
+  .event-img-description {
+    padding-left:18%;
   }
 .event-description-one{
   width:50%;
@@ -78,23 +95,72 @@ h2, h5{
   float:right;
   margin:0;
 }
-/*using padding to control position of text inside. calculated relative to this div's width/height. Really don't like this..not very DRY. But couldn't figure out how to position the horizontal line without separating text fields.. */
+
+/*handling font-styling for all event-descriptions*/
+.event-description h4{
+  text-transform: uppercase;
+  font-size: 100%;
+  letter-spacing: 2px;
+}
+.event-description h2{
+  text-transform: uppercase;
+  letter-spacing:3px;
+  font-size: 110%;
+  font-weight: lighter;
+  color:orange;
+}
+
+.event-description h3{
+  font-style: italic;
+  font-size: 90%;
+}
+
+.event-description p{
+  font-weight: lighter;
+  font-size: 80%;
+}
+
+.event-description h5{
+  color:orange;
+  letter-spacing: 2px;
+  font-size: 60%;
+  text-transform: uppercase;
+}
+/*using padding to control position of text inside. calculated relative to this div's width/height. Really don't like this...not very DRY. But couldn't figure out how to position the horizontal line without separating text fields.. */
 
   .event-description-one h4{
-    padding: 9.3% 11% 0 12.5%;
+    padding: 9.3% 11% 1.5% 12.5%;
   }
   .event-description-one h3{
     padding: 0 11% 0 13.5%;
   }
   .event-description-one h2{
-    padding: 0 11% 0 13.5%;
+    padding: 1.5% 11% 1.5% 13.5%;
   }
   .event-description-one h5{
     padding: 0 11% 0 13.5%;
   }
   .event-description-one p{
-    padding: 0 11% 0 13.5%;
+    padding:2% 11% 3% 13.5%;
   }
+
+/*for bottom left text box*/
+  .event-description-two h4{
+    padding: 11.9% 11% 1.5% 0;
+  }
+  .event-description-two h3{
+    padding: 0 11% 0 15.5%;
+  }
+  .event-description-two h2{
+    padding: 1.5% 11% 1.5% 15.5%;
+  }
+  .event-description-two h5{
+    padding: 0 11% 0 15.5%;
+  }
+  .event-description-two p{
+    padding: 2% 11% 3% 15.5%;
+  }
+
 
 /*content inside .event-description-one*/
   .hrz-line-one{
@@ -108,22 +174,6 @@ h2, h5{
     position:absolute;
     float:right;
   }
-
-.event-description-two h4{
-  padding: 12.9% 11% 0 0;
-}
-.event-description-two h3{
-  padding: 0 11% 0 15.5%;
-}
-.event-description-two h2{
-  padding: 0 11% 0 15.5%;
-}
-.event-description-two h5{
-  padding: 0 11% 0 15.5%;
-}
-.event-description-two p{
-  padding: 0 11% 0 15.5%;
-}
 .event-img-two{
   width:50%;
   height:55%;
@@ -140,7 +190,6 @@ h2, h5{
   float:left;
   margin:0;
   text-align: right;
-
 }
 
 
