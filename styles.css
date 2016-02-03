@@ -41,20 +41,36 @@ h2, h5{
   right:0;
   position:absolute;
 }
-
-
+.featured-events{
+  text-align: center;
+  color:white;
+  background:url('images/img-three.jpeg');
+  background-size: 100% 100%; /*display entire img inside div */
+  width:29.4%;
+  height:23.2%;
+  position:absolute;
+  top:38.5%;
+  left:36%;
+  z-index: 200;
+}
 .event-img-one{
   width:50%; /*takes up 50% of #sub-container width */
   height: 55%; /*takes up 53.1% of #sub-container height */
   margin:0;
   float:left;
-  background: url('img-one.jpeg');
+  background: url('images/img-one.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
-  -webkit-filter: hue-rotate(-120deg);
+  -webkit-filter: hue-rotate(-120deg); /* make purple */
 }
 
+  .event-img-text{
+    padding:8% 10% 0;
+  }
   .month{
     text-decoration: underline;
+  }
+  .day{
+    float:left;
   }
 .event-description-one{
   width:50%;
@@ -93,8 +109,6 @@ h2, h5{
     float:right;
   }
 
-
-
 .event-description-two h4{
   padding: 12.9% 11% 0 0;
 }
@@ -115,7 +129,7 @@ h2, h5{
   height:55%;
   margin:0;
   float:right;
-  background: url('img-two.jpeg');
+  background: url('images/img-two.jpeg');
   background-size: 100% 100%;
   -webkit-filter: hue-rotate(-120deg);
 }
@@ -131,22 +145,9 @@ h2, h5{
 
 
 
-.featured-events{
-  background:url('img-three.jpeg');
-  background-size: 100% 100%; /*display entire img inside div */
-  width:28.4%;
-  height:23.2%;
-  position:absolute;
-  visibility: visible;
-  top:38.5%;
-  left:36%;
-  right:0;
-  z-index: 200;
-}
 
-
+/*media queries - below 800px*/
 @media (max-width: 800px) {
-
   .featured-events{
     position: relative;
     width:60%;
