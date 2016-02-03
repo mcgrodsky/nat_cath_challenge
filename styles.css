@@ -42,6 +42,7 @@ h2, h5{
   position:absolute;
 }
 
+
 .event-img-one{
   width:50%; /*takes up 50% of #sub-container width */
   height: 55%; /*takes up 53.1% of #sub-container height */
@@ -50,8 +51,11 @@ h2, h5{
   background: url('img-one.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
   -webkit-filter: hue-rotate(-120deg);
-
 }
+
+  .month{
+    text-decoration: underline;
+  }
 .event-description-one{
   width:50%;
   height: 45%; /*takes up 41% on #subcontainer*/
@@ -89,7 +93,6 @@ h2, h5{
     float:right;
   }
 
-/*essentially the same as .event-img-one. would normally make mixin*/
 
 
 .event-description-two h4{
