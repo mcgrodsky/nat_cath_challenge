@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, p{
 .event-img-description {
     padding-left:18%;
     text-transform: uppercase;
-    font-size: 180%;
+    font-size: 160%;
 }
 .event-img-text{
     padding:8% 10% 0;
@@ -141,6 +141,17 @@ h1, h2, h3, h4, h5, p{
   font-size: 200%;
   float:left;
 }
+.hrz-line-one{
+  width:12.5%;
+  border-top:1px solid #CA832D;
+  position:absolute;
+}
+.hrz-line-two{
+  width:22.5%;
+  border-top:1px solid #CA832D;
+  float:right;
+}
+
 /*handling font-styling for all event-descriptions*/
 .event-description h4, h2, h5{
   text-transform: uppercase;
@@ -150,7 +161,7 @@ h1, h2, h3, h4, h5, p{
 .event-description h2{
   letter-spacing:3px;
   font-size: 110%;
-  color:orange;
+  color:#CA832D;
 }
 .event-description h3{
   font-style: italic;
@@ -160,13 +171,12 @@ h1, h2, h3, h4, h5, p{
   font-size: 80%;
 }
 .event-description h5{
-  color:orange;
+  color:#CA832D;
   font-size: 65%;
 }
 
 
 /*using padding to control position of text inside. calculated relative to this div's width/height. Really don't like this...not very DRY. But couldn't figure out how to position the horizontal line without separating text fields...if i didn't have line, would just control padding of entire event-description div */
-
   .event-description-one h4{
     padding: 9.3% 11% 1.5% 13.5%;
   }
@@ -205,27 +215,11 @@ h1, h2, h3, h4, h5, p{
   }
 
 
-/*content inside .event-description-one*/
-  .hrz-line-one{
-    width:12.5%;
-    border-top:1px solid orange;
-    position:absolute;
-  }
-  .hrz-line-two{
-    width:12.5%;
-    border-top:1px solid orange;
-    position:absolute;
-    float:right;
-  }
-
-
-
 /*media queries - below 800px*/
 @media (max-width: 800px) {
   #main-container{
     height: 136%;
     margin-top: 40%;
-
   }
   .featured-events{
     position: relative;
@@ -245,11 +239,13 @@ h1, h2, h3, h4, h5, p{
     width:100%;
     margin:0 auto;
   }
-  .event-description-one, .event-description-two{
+  .event-description{
     width:100%;
     height:auto;
     margin:0 auto;
     text-align: center;
+    padding: 3% 0;
+    background: lightgray;
   }
   .hrz-line-two, .hrz-line-one{
     display: none;
