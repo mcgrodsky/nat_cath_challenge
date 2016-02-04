@@ -45,44 +45,47 @@ h1, h2, h3, h4, h5, p{
   background:url('images/img-four.jpeg');
   background-size: 100% 100%; /*display entire img inside div */
   width:34.4%;
-  height:20.1%;
+  height:20.2%;
   position:absolute;
   top:38.5%;
-  left:36%;
+  left:32%;
   z-index: 200;
 }
 .featured-events:before {
-   border:3px solid orange;
+   border:2px solid orange;
    border-bottom: none;
    content:"";
    display: inline-block;;
-   width: 40%;
-   height: 30%;
+   width: 29.9%;
+   height: 45%;
    position: absolute;
-   top: -10%;
-   left:30%;
+   top: -15%;
+   left:35%;
 }
 .featured-events:after {
-   border:3px solid orange;
+   border:2px solid orange;
    border-top:none;
    content:"";
    display: inline-block;
-   width: 40%;
-   height: 30%;
+   position: absolute;
+   width: 29.9%;
+   height: 45%;
+   top: 70%;
+   left:35%;
 }
 .featured-events h1{
   text-transform: lowercase;;
-  font-size: 170%;
+  font-size: 150%;
   font-style: italic;
   letter-spacing: 2px;
-  padding-top:11%;
+  padding-top:12%;
 }
 .featured-events h2{
   text-transform: uppercase;
-  font-size: 70%;
-  width:30%;
+  font-size: 50%;
+  width:20%;
   margin:0 auto;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 
 /*event-img-one upper-left div*/
@@ -102,14 +105,51 @@ h1, h2, h3, h4, h5, p{
   height:100%;
   -webkit-filter: hue-rotate(-120deg); /* make purple */
 }
+/*description overtop event-img-one*/
 .event-description-one{
+  position: relative;
   width:50%;
   height: 45%; /*takes up 41% on #subcontainer*/
-  padding: 4% 0 0 7.5%;
+  padding: 4% 7.5% 0;
   float:right;
   margin:0;
 }
-/*event-img-two bottom-right div*/
+.event-description-one h4{
+  padding:5.7% 0 3.6% 0;
+}
+.event-description h4:after{
+  content: " ";
+  width:15.5%;
+  top: 11%;
+  border-top:1px solid #CA832D;
+  display: inline-block;
+  position: absolute;
+  left:50%;
+}
+
+
+/*event description overtop event-img-2*/
+.event-description-two{
+  position: relative;
+  width:50%;
+  height:45%;
+  float:left;
+  margin:0;
+  padding: 7% 7.5% 0;
+  text-align: right;
+}
+.event-description-two h4:after{
+  content: " ";
+  width:15.5%;
+  top: 67%;
+  border-top:1px solid #CA832D;
+  display: inline-block;
+  position:absolute;
+  left:34.5%;
+}
+.event-description-two h4{
+  padding: 0 0 3.6% 0;
+}
 .event-img-two{
   position:relative;
   width:50%;
@@ -127,14 +167,7 @@ h1, h2, h3, h4, h5, p{
   height:100%;
   -webkit-filter: hue-rotate(-120deg);
 }
-.event-description-two{
-  width:50%;
-  height:45%;
-  float:left;
-  margin:0;
-  padding: 10% 5% 0 0;
-  text-align: right;
-}
+
 
 /* handling font-styling for all event-descriptions*/
 .event-description h4, h2, h5{
@@ -146,18 +179,22 @@ h1, h2, h3, h4, h5, p{
   letter-spacing:3px;
   font-size: 110%;
   color:#CA832D;
+  padding:0 0 2.4% 0;
 }
 .event-description h3{
   font-style: italic;
   font-size: 90%;
+  padding:0 0 2.6% 0;
 }
 .event-description p{
   font-size: 80%;
+  padding:0 0 4.4% 0;
 }
 .event-description h5{
   color:#CA832D;
   font-size: 65%;
 }
+
 
 /*used for both event-img-divs*/
 .event-img-description {
@@ -184,23 +221,15 @@ h1, h2, h3, h4, h5, p{
   font-size: 200%;
   float:left;
 }
-.hrz-line-one{
-  width:13.5%;
-  border-top:1px solid #CA832D;
-  position:absolute;
-  left:50%;
-}
-.hrz-line-two{
-  width:22.5%;
-  border-top:1px solid #CA832D;
-  float:right;
-}
 
 /*media queries - below 800px*/
 @media (max-width: 800px) {
+  body{
+    margin:0 1em;
+  }
   #main-container{
     height: 136%;
-    margin-top: 40%;
+    margin-top: 44%;
   }
   .featured-events{
     position: relative;
@@ -228,7 +257,13 @@ h1, h2, h3, h4, h5, p{
     padding: 3% 0;
     background: lightgray;
   }
-  .hrz-line-two, .hrz-line-one{
+  .event-description h4:after{
+    display: none;
+  }
+  .featured-events:before {
+    display: none;
+  }
+  .featured-events:after{
     display: none;
   }
 }
