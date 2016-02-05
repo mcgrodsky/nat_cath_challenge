@@ -117,15 +117,14 @@ h1, h2, h3, h4, h5, p{
 .event-description-one h4{
   padding:5.7% 0 3.6% 0;
 }
-.event-description h4:after{
+
+/*this was the hardest part...never figured out how to position horizontal orange lines!*/
+/*.event-description h4:after{
   content: " ";
-  width:15.5%;
-  top: 11%;
+  width:19.5%;
   border-top:1px solid #CA832D;
-  display: inline-block;
-  position: absolute;
-  left:50%;
-}
+  display: block;
+}*/
 
 /*event-img-two lower-right div*/
 .event-img-two{
@@ -154,15 +153,15 @@ h1, h2, h3, h4, h5, p{
   padding: 7% 7.5% 0;
   text-align: right;
 }
-.event-description-two h4:after{
-  content: " ";
+
+/*.event-description-two h4:after{
+  content: "";
   width:15.5%;
-  top: 67%;
   border-top:1px solid #CA832D;
-  display: inline-block;
-  position:absolute;
-  left:34.5%;
-}
+  display:block;
+  float:right;
+}*/
+
 .event-description-two h4{
   padding: 0 0 3.6% 0;
 }
@@ -234,8 +233,8 @@ h1, h2, h3, h4, h5, p{
     margin:0 1em;
   }
   #main-container{
-    height:100%;
-    margin:5% 0;
+    height:150%;
+    margin:40% 0 0;
   }
   .featured-events{
     position:relative;
@@ -275,5 +274,12 @@ h1, h2, h3, h4, h5, p{
   }
   .featured-events:after{
     display:none;
+  }
+}
+
+@media (max-width: 550px) {
+  #main-container{
+    margin:62% 0 10%;
+    height:150%;
   }
 }
