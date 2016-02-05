@@ -277,6 +277,7 @@ h1, h2, h3, h4, h5, p{
   }
 }
 
+/*to handle main-container collapsing*/
 @media (max-width: 550px) {
   #main-container{
     margin:62% 0 10%;
