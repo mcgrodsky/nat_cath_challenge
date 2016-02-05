@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, p{
   height:100%;
   -webkit-filter: hue-rotate(-120deg); /* make purple */
 }
+
 /*description description one - top right*/
 .event-description-one{
   position: relative;
@@ -166,7 +167,6 @@ h1, h2, h3, h4, h5, p{
   padding: 0 0 3.6% 0;
 }
 
-
 /* handling font-styling for all event-descriptions*/
 .event-description h4, h2, h5{
   text-transform: uppercase;
@@ -192,7 +192,6 @@ h1, h2, h3, h4, h5, p{
   color:#CA832D;
   font-size:65%;
 }
-
 
 /*used for both event-img-divs*/
 .event-img-description {
