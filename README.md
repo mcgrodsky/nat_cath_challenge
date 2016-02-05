@@ -10,5 +10,6 @@
 <h2> Outstanding Issues </h2>
 <ol>
 <li> Had to use a hacky way to calculate sizes - used my on-screen ruler to calculate the size of my #main-container and #sub-container and then every other size/padding/dimension was based off of that. Not ideal.</li>
-<li> The horizontal lines underneath the event types are not working. Refactored a few times to try and come up with better solution (including creating them as empty divs with just a border-top). Right now they get out of place on window re-size so the CSS is commented out. Tried different positionings (wanted to have then absolute and inline-block but the window resizing messed this up - not sure why)</li>
+<li> The horizontal lines underneath the event types are not working. Refactored a few times to try and come up with better solution than :before :after content(including creating them as empty divs with just a border-top). Right now they get out of place on window re-size so the CSS is commented out. Tried different positionings (wanted to have them absolute and inline-block but the window resizing messed this up - not sure why)</li>
+<li> Used a webkit hue-rotate to achieve purple tint on images. I know it's not the same shade as in the example, but I thought achieved the same purpose, as I understand this would normally be tinted in a photo editor. 
 </ol>
